@@ -40,7 +40,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 5% 10% 10% 10%;
+    margin: 1% 10% 7% 10%;
+    padding-bottom: 3%;
 }
 
 
