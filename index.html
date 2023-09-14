@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Replicant</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <!--<script src="main.js"></script>-->
+</head>
+<body>
+    <div class="Path_Gallery">
+        <div class="Path_Slider">
+            <div class="Choice_Slide" id="Stack_Slide">
+                <button class="Path_Button" id="Stack_Button">
+                    <img src="Replicant.png" class="Thumbnail" id="Stack_Ico" />
+                </button>
+                <span class="Button_Label">Replicant</span>
+            </div>
+            <div class="Choice_Slide" id="Synapsis_Slide">
+                <button class="Path_Button" id="Synapsis_Button">
+                    <img src="Mario.png" class="Thumbnail" id="Synapsis_Ico" />
+                </button>
+                <span class="Button_Label">Mario</span>
+            </div>
+        </div>
+    </div>
+    <script>
+        let tg = window.Telegram.WebApp;
+        let userChoice = "";
+        let replicantButton = document.getElementById("Stack_Button");
+        let marioButton = document.getElementById("Synapsis_Button");
+        console.log(replicantButton)
+
+        replicantButton.addEventListener("click", () => {
+            userChoice = "Replicant"
+            console.log('CLICKED')
+            tg.sendData(userChoice)
+            tg.close();
+        });
+
+        marioButton.addEventListener("click", () => {
+            userChoice = "Mario"
+            console.log('CLICKED')
+            tg.sendData(userChoice)
+            tg.close();
+        });
+
+      
+    </script>
+</body>
+</html>
