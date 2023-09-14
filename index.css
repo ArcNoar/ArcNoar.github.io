@@ -28,6 +28,7 @@ body {
 .Path_Slider {
     width: 100%;
     height: 50%;
+    margin-bottom: 40px;
     position: absolute;
     display: flex;
     justify-content: center;
